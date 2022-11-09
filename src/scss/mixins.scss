@@ -1,0 +1,7 @@
+@mixin device($size) {
+    @if $size == mobile {
+    @media screen and (max-width: 790px) {
+      @content;
+    }
+  }
+}
