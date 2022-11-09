@@ -30,8 +30,8 @@
   }
   h2 {
     font-family: 'Nunito', sans-serif;
-    font-size: 1.1rem;
     font-weight: 500;
+    font-size: 1.1rem;
     margin-bottom: 2rem;
     @include device(mobile) {
       font-size: 1rem;
@@ -40,6 +40,7 @@
   }
   p {
     font-family: 'Nunito', sans-serif;
+    font-weight: 400;
     display: block;
     padding: 0.25rem 1rem;
     &:last-child {
