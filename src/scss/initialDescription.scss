@@ -1,0 +1,48 @@
+.intialDescriptionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10rem 1rem 0;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  @include device(mobile) {
+    padding: 6rem 1rem 0;
+  }
+}
+
+.intialDescription {
+  height: 550px;
+  background: linear-gradient(90deg, rgb(15, 18, 34) 0%, rgb(16, 33, 49) 100%);
+}
+
+.descriptionText {
+  flex: 1 0 300px;
+  color: #fff;
+  h1 {
+    font-size: 3rem;
+    @include device(mobile) {
+      font-size: 2.5rem;
+    }
+  }
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    @include device(mobile) {
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+  p {
+    padding: 0.5rem 1rem;
+    &:last-child {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.descriptionPhoto {
+  flex: 1 0 300px;
+  color: #fff;
+}
