@@ -61,6 +61,7 @@
   background: rgba(0, 0, 0, 0.9);
   li a {
     color: #fff;
+    font-size: 1.5rem;
     &:hover {
       color: #6c6b7b;
     }
@@ -97,13 +98,14 @@
 .xButton {
   background: none;
   position: absolute;
+  border: none;
   top: 1rem;
   right: 1rem;
   display: none;
   z-index: 5;
   cursor: pointer;
   img {
-    width: 2rem;
+    width: 1.5rem;
   }
 }
 
