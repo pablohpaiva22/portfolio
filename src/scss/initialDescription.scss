@@ -1,3 +1,8 @@
+.intialDescription {
+  min-height: 550px;
+  background: linear-gradient(90deg, rgb(15, 18, 34) 0%, rgb(16, 33, 49) 100%);
+}
+
 .intialDescriptionContainer {
   max-width: 1200px;
   margin: 0 auto;
@@ -9,11 +14,6 @@
   @include device(mobile) {
     padding: 6rem 1rem 0;
   }
-}
-
-.intialDescription {
-  height: 550px;
-  background: linear-gradient(90deg, rgb(15, 18, 34) 0%, rgb(16, 33, 49) 100%);
 }
 
 .descriptionText {
