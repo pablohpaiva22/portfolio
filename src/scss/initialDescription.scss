@@ -16,16 +16,20 @@
   }
 }
 
+
+
 .descriptionText {
   flex: 1 0 300px;
   color: #fff;
   h1 {
+    font-family: 'Nunito', sans-serif;
     font-size: 3rem;
     @include device(mobile) {
       font-size: 2.5rem;
     }
   }
   h2 {
+    font-family: 'Nunito', sans-serif;
     font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 2rem;
@@ -35,7 +39,9 @@
     }
   }
   p {
-    padding: 0.5rem 1rem;
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    padding: 0.25rem 1rem;
     &:last-child {
       margin-bottom: 1.5rem;
     }
