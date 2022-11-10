@@ -16,7 +16,7 @@
 .logo {
   padding: 1rem;
   width: 130px;
-  @include device(mobile) {
+  @include device(mid) {
     display: none;
   }
 }
@@ -32,7 +32,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  @include device(mobile) {
+  @include device(mid) {
     display: none;
   }
 
@@ -83,7 +83,7 @@
   border: none;
   display: none;
   cursor: pointer;
-  @include device(mobile) {
+  @include device(mid) {
     display: block;
   }
 }
