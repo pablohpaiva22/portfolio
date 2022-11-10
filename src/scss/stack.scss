@@ -1,0 +1,28 @@
+.stack {
+  min-height: 400px;
+  margin: 5rem auto 0;
+  padding: 0 1rem 0;
+  background: rgb(179, 176, 176);
+  display: flex;
+  justify-content: center;
+}
+
+.stackContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem 5rem;
+  @include device(mid) {
+    gap: 0 3rem;
+  }
+  div {
+    width: 140px;
+    @include device(mid) {
+      width: 100px;
+    }
+    @include device(mobile) {
+      width: 80px;
+    }
+  }
+}
