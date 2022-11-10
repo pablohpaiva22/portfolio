@@ -1,6 +1,11 @@
 @mixin device($size) {
-    @if $size == mobile {
+  @if $size == mid {
     @media screen and (max-width: 790px) {
+      @content;
+    }
+  }
+  @if $size == mobile {
+    @media screen and (max-width: 500px) {
       @content;
     }
   }
