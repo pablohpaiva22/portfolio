@@ -18,12 +18,16 @@
 }
 
 .logoContainer {
-  display: flex;  
+  display: flex;
   gap: 2rem;
   div {
     max-width: 150px;
     &:last-child {
       max-width: 80px;
     }
+  }
+  @include device(mobile) {
+    gap: 0;
+    padding: 0 1rem;
   }
 }
