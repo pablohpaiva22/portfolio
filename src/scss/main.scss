@@ -4,9 +4,9 @@
 }
 
 .mainContainer {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 10rem 1rem 0;
+  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -17,9 +17,9 @@
 }
 
 .mainText {
-  flex: 1 0 300px;
   padding: 0 1rem;
   color: #fff;
+  flex: 1 0 300px;
   h1 {
     font-family: "Nunito", sans-serif;
     font-size: 3rem;
@@ -28,19 +28,19 @@
     }
   }
   h2 {
+    margin-bottom: 2rem;
     font-family: "Nunito", sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
-    margin-bottom: 2rem;
     @include device(mid) {
-      font-size: 1rem;
       margin-bottom: 1.2rem;
+      font-size: 1rem;
     }
   }
   p {
     font-family: "Nunito", sans-serif;
-    font-weight: 400;
     display: block;
+    font-weight: 400;
     &:last-child {
       margin-bottom: 1.5rem;
     }
@@ -48,6 +48,6 @@
 }
 
 .mainPhoto {
-  flex: 1 0 300px;
   color: #fff;
+  flex: 1 0 300px;
 }

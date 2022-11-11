@@ -1,15 +1,11 @@
 .header {
-  position: fixed;
   width: 100%;
-  background: linear-gradient(
-    90deg,
-    rgb(15, 18, 34) 0%,
-    rgb(16, 33, 49) 100%,
-  );
+  background: linear-gradient(90deg, rgb(15, 18, 34) 0%, rgb(16, 33, 49) 100%);
+  position: fixed;
 }
 
 .header.headerTransform {
-  background: rgba(10, 10 ,10, 0.95);
+  background: rgba(10, 10, 10, 0.95);
   transition: 400ms;
 }
 
@@ -37,9 +33,9 @@
   }
 
   li a {
-    font-family: 'Rubik', sans-serif;
-    color: #6c6b7b;
     padding: 0.5rem 1rem;
+    color: #6c6b7b;
+    font-family: "Rubik", sans-serif;
     display: block;
     text-decoration: none;
     &:hover {
@@ -51,14 +47,14 @@
 }
 
 .navList.active {
-  display: block;
   padding-top: 12rem;
-  text-align: center;
-  position: absolute;
-  top: 0;
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.9);
+  display: block;
+  position: absolute;
+  top: 0;
+  text-align: center;
   li a {
     color: #fff;
     font-size: 1.5rem;
@@ -97,11 +93,11 @@
 
 .xButton {
   background: none;
-  position: absolute;
   border: none;
+  display: none;
+  position: absolute;
   top: 1rem;
   right: 1rem;
-  display: none;
   z-index: 5;
   cursor: pointer;
   img {
