@@ -1,5 +1,11 @@
 .projects {
-  margin: 5rem auto 5rem;
+  margin: 8rem auto 8rem;
+  @include device(mid) {
+    margin: 5rem auto 5rem;
+  }
+  @include device(mobile) {
+    margin: 3rem auto 3rem;
+  }
 }
 
 .projectsContainer {
@@ -12,6 +18,12 @@
     margin: 1rem 0 3rem;
     font-weight: normal;
     text-align: center;
+    @include device(mid) {
+      margin: 1rem 0 2rem;
+    }
+    @include device(mobile) {
+      margin: 1rem 0 1rem;
+    }
   }
 }
 
