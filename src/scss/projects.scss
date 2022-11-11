@@ -1,0 +1,78 @@
+.projects {
+  margin: 5rem auto;
+}
+
+.projectsContainer {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+    margin: 1rem 0 3rem;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+.projectsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 1.7rem;
+  text-align: center;
+}
+
+.card {
+  max-width: 450px;
+  flex: 1 0 250px;
+  padding: 1rem;
+  background: rgb(254, 255, 247);
+  border-radius: 1rem;
+  transition: 400ms;
+  box-shadow: 1px 1px 4px 0 #000;
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+  }
+  p {
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 1rem;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    background: #000;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+  }
+  &:hover {
+    transform: scale(1.10);
+    color: #fff;
+    background: black;
+    a {
+      background: #fff;
+      color: #000;
+    }
+  }
+}
+
+.projectsImg {
+  border-radius: 12px;
+  box-shadow: 0 0 2px 1px #000;
+  display: flex;
+  img {
+    border-radius: 12px;
+  }
+}
+
+.projectsLinks {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
