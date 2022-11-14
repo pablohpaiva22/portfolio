@@ -12,12 +12,12 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem 5rem;
+  gap: 1rem 8rem;
   @include device(mid) {
     gap: 0 3rem;
   }
   div {
-    width: 140px;
+    width: 120px;
     @include device(mid) {
       width: 100px;
     }

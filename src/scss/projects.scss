@@ -37,7 +37,7 @@
 
 .card {
   padding: 1rem;
-  max-width: 450px;
+  max-width: 350px;
   background: rgb(254, 255, 247);
   flex: 1 0 250px;
   border-radius: 1rem;
@@ -67,6 +67,7 @@
     background: black;
     color: #fff;
     transform: scale(1.1);
+    box-shadow: none;
     a {
       background: #fff;
       color: #000;
