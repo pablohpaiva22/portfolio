@@ -5,7 +5,7 @@
 
 .contactContainer {
   margin: 0 auto 2rem;
-  max-width: 500px;
+  max-width: 550px;
   h2 {
     font-weight: normal;
     margin-bottom: 1.5rem;
@@ -19,11 +19,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 1rem;
   div {
     max-width: 150px;
     &:last-child {
-      max-width: 180px;
+      max-width: 175px;
     }
+  }
+  @include device(mid) {
+    justify-content: center;
   }
   @include device(mobile) {
     gap: 0;
