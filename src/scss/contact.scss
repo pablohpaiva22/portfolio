@@ -81,8 +81,36 @@
     font-family: "Rubik", sans-serif;
     border: none;
     cursor: pointer;
+  }
+
+  .btn {
     &:hover {
       background: #ddd;
     }
   }
+}
+
+.formError {
+  display: none;
+  margin-top: 0.5rem;
+  color: rgb(247, 0, 0);
+  font-family: "Rubik", sans-serif;
+}
+
+.formError.active {
+  display: block
+}
+
+.success {
+  display: none;
+  margin-top: 0.5rem;
+  color: rgb(0, 146, 0);
+  font-family: "Rubik", sans-serif;
+}
+
+.success.active {
+  display: block;
+  margin-top: 0.5rem;
+  color: rgb(0, 146, 0);
+  font-family: "Rubik", sans-serif;
 }

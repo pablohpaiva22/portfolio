@@ -28,5 +28,3 @@ export function modalClose() {
   })
   xButton.addEventListener('click', handleCloseButtonClick)
 }
-
-console.log(navListItem)
