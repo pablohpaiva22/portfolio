@@ -101,6 +101,17 @@
   display: block
 }
 
+.serverError {
+  display: none;
+  margin-top: 0.5rem;
+  color: rgb(247, 0, 0);
+  font-family: "Rubik", sans-serif;
+}
+
+.serverError.active {
+  display: block
+}
+
 .success {
   display: none;
   margin-top: 0.5rem;

@@ -3,6 +3,7 @@ const name = document.getElementById("name");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
 const error = document.getElementById("formError");
+const serverError = document.getElementById("serverError");
 const success = document.getElementById('success')
 const button = document.querySelector('.form button')
 
@@ -10,6 +11,7 @@ function formSubmit() {
   async function handleSubmit(e) {
     e.preventDefault();
     error.classList.remove("active");
+    serverError.classList.remove('active')
 
     if (
       name.value.length === 0 ||
@@ -21,7 +23,7 @@ function formSubmit() {
     }
 
     try {
-      button.setAttribute('disabled', true)
+      button.setAttribute('disabled', 'disabled')
       button.classList.remove('btn')
       button.innerText = 'Enviando...'
       const response = await fetch("http://ec2-18-231-170-180.sa-east-1.compute.amazonaws.com:3333/sendemail", {
@@ -37,11 +39,14 @@ function formSubmit() {
       });
       const data = await response.json();
       if (!response.ok) throw new Error()
-    } catch(err) {
-      console.log('deu erro')
-    } finally {
       success.classList.add('active')
       button.innerText = 'Enviado'
+    } catch(err) {
+      console.log('deu erro')
+      button.classList.add('btn')
+      button.removeAttribute('disabled', 'disabled')
+      button.innerText = 'Enviar'
+      serverError.classList.add('active')
     }
   }
 
