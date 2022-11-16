@@ -26,7 +26,7 @@ function formSubmit() {
       button.setAttribute('disabled', 'disabled')
       button.classList.remove('btn')
       button.innerText = 'Enviando...'
-      const response = await fetch("http://ec2-18-231-170-180.sa-east-1.compute.amazonaws.com:3333/sendemail", {
+      const response = await fetch("https://portfolio-pablopaiva-server.vercel.app/sendemail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
