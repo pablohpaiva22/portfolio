@@ -22,9 +22,6 @@
   gap: 1rem;
   div {
     max-width: 150px;
-    &:last-child {
-      max-width: 175px;
-    }
   }
   @include device(mid) {
     justify-content: center;
