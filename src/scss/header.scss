@@ -2,6 +2,7 @@
   width: 100%;
   background: linear-gradient(90deg, rgb(15, 18, 34) 0%, rgb(16, 33, 49) 100%);
   position: fixed;
+  z-index: 5;
 }
 
 .header.headerTransform {
