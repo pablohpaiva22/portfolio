@@ -6,6 +6,7 @@ const error = document.getElementById("formError");
 const serverError = document.getElementById("serverError");
 const success = document.getElementById('success')
 const button = document.querySelector('.form button')
+const loading = document.getElementById('loadingIcon')
 
 function formSubmit() {
   async function handleSubmit(e) {
@@ -26,6 +27,7 @@ function formSubmit() {
       button.setAttribute('disabled', 'disabled')
       button.classList.remove('btn')
       button.innerText = 'Enviando...'
+      loading.classList.add('active')
       const response = await fetch("https://portfolio-pablopaiva-server.vercel.app/sendemail", {
         method: "POST",
         headers: {
@@ -41,12 +43,14 @@ function formSubmit() {
       if (!response.ok) throw new Error()
       success.classList.add('active')
       button.innerText = 'Enviado'
+      loading.classList.remove('active')
     } catch(err) {
       console.log('deu erro')
       button.classList.add('btn')
       button.removeAttribute('disabled', 'disabled')
       button.innerText = 'Enviar'
       serverError.classList.add('active')
+      loading.classList.remove('active')
     }
   }
 
