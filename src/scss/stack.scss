@@ -23,6 +23,9 @@
   align-items: center;
   justify-content: center;
   gap: 1rem 8rem;
+  &:first-child {
+    padding-left: 10rem;
+  }
   @include device(mid) {
     gap: 0 3rem;
   }
