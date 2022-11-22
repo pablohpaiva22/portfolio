@@ -4,17 +4,33 @@
   min-height: 400px;
   background: rgb(179, 176, 176);
   display: flex;
-  justify-content: center;
+  overflow: hidden;
+  @include device(mid) {
+    min-height: 300px;
+  }
+}
+
+.slideContainer {
+  display: flex;
+  gap: 8rem;
+  @include device(mid) {
+    gap: 3rem;
+  }
 }
 
 .stackContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 1rem 8rem;
   @include device(mid) {
     gap: 0 3rem;
+  }
+  @include device(mobile) {
+    flex-wrap: wrap;
+    &:last-child {
+      display: none;
+    }
   }
   div {
     width: 120px;
