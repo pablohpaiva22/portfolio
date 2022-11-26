@@ -1,6 +1,6 @@
 .contact {
   padding: 2rem 0;
-  background: rgb(211, 196, 196);
+  background: $color-sand;
   position: relative;
 }
 
@@ -91,7 +91,7 @@
 .formError {
   display: none;
   margin-top: 0.5rem;
-  color: rgb(247, 0, 0);
+  color: $color-error;
   font-family: "Rubik", sans-serif;
 }
 
@@ -102,7 +102,7 @@
 .serverError {
   display: none;
   margin-top: 0.5rem;
-  color: rgb(247, 0, 0);
+  color: $color-error;
   font-family: "Rubik", sans-serif;
 }
 
@@ -113,14 +113,14 @@
 .success {
   display: none;
   margin-top: 0.5rem;
-  color: rgb(0, 146, 0);
+  color: $color-success;
   font-family: "Rubik", sans-serif;
 }
 
 .success.active {
   display: block;
   margin-top: 0.5rem;
-  color: rgb(0, 146, 0);
+  color: $color-success;
   font-family: "Rubik", sans-serif;
 }
 

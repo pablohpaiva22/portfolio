@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  background: #021731;
+  background: $color-blue;
   position: fixed;
   z-index: 5;
 }
@@ -35,7 +35,7 @@
 
   li a {
     padding: 0.5rem 1rem;
-    color: #6c6b7b;
+    color: $color-gray;
     font-family: "Rubik", sans-serif;
     display: block;
     text-decoration: none;
@@ -60,7 +60,7 @@
     color: #fff;
     font-size: 1.5rem;
     &:hover {
-      color: #6c6b7b;
+      color: $color-gray;
     }
   }
 }
@@ -88,8 +88,8 @@
 .hamburguerButton {
   width: 30px;
   height: 4px;
-  background: #6c6b7b;
-  box-shadow: 0 -10px 0 0 #6c6b7b, 0 10px 0 0 #6c6b7b;
+  background: $color-gray;
+  box-shadow: 0 -10px 0 0 $color-gray, 0 10px 0 0 $color-gray;
 }
 
 .xButton {
