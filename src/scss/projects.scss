@@ -1,9 +1,9 @@
 .projects {
   margin: 8rem auto 8rem;
-  @include device(mid) {
+  @include device(medium) {
     margin: 5rem auto 5rem;
   }
-  @include device(mobile) {
+  @include device(small) {
     margin: 3rem auto 3rem;
   }
 }
@@ -18,10 +18,10 @@
     font-size: 3rem;
     font-weight: normal;
     text-align: center;
-    @include device(mid) {
+    @include device(medium) {
       margin: 1rem 0 2rem;
     }
-    @include device(mobile) {
+    @include device(small) {
       margin: 1rem 0 1rem;
     }
   }

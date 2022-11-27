@@ -1,5 +1,5 @@
 .about {
-  margin: 8rem auto 8rem;
+  margin: 6rem auto 8rem;
   max-width: 550px;
   h2 {
     margin-bottom: 1rem;
@@ -13,10 +13,10 @@
     padding: 0 1rem;
     font-family: "Rubik", sans-serif;
   }
-  @include device(mid) {
+  @include device(medium) {
     margin: 5rem auto 5rem;
   }
-  @include device(mobile) {
+  @include device(small) {
     margin: 3rem auto 3rem;
   }
 }
