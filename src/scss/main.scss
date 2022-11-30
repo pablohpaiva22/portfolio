@@ -1,6 +1,9 @@
 .main {
   min-height: 480px;
   background: $color-blue;
+  @include device(medium) {
+    min-height: 300px;
+  }
 }
 
 .mainContainer {
@@ -11,8 +14,11 @@
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
+  @include device(medium) {
+    padding: 8rem 1rem 0;
+  }
   @include device(small) {
-    padding: 6rem 1rem 0;
+    padding: 7rem 1rem 0;
   }
 }
 
@@ -21,29 +27,38 @@
   color: #fff;
   flex: 1 0 300px;
   h1 {
-    font-family: "Nunito", sans-serif;
-    font-size: 3rem;
+    font-family: 'Tourney', cursive;
+    font-weight: 300;
+    font-size: 4rem;
     @include device(medium) {
       font-size: 2.5rem;
     }
   }
   h2 {
     margin-bottom: 2rem;
-    font-family: "Nunito", sans-serif;
-    font-weight: 500;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
     font-size: 1.2rem;
+    color: #FAFF00;
     @include device(medium) {
       margin-bottom: 1.2rem;
       font-size: 1rem;
     }
   }
-  p {
-    font-family: "Nunito", sans-serif;
-    display: block;
-    font-weight: 400;
-    &:last-child {
-      margin-bottom: 1.5rem;
-    }
+}
+
+.mainSubtitle {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.mainSubtitleImage {
+  width: 60px;
+  @include device(medium) {
+    width: 30px;
   }
 }
 
