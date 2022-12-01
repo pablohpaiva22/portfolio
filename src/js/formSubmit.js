@@ -8,8 +8,6 @@ const success = document.getElementById('success')
 const button = document.getElementById('btn')
 const loading = document.getElementById('loadingIcon')
 
-console.log(button)
-
 function formSubmit() {
   async function handleSubmit(e) {
     e.preventDefault();
