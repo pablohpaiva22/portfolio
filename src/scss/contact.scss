@@ -86,6 +86,10 @@
     cursor: pointer;
   }
 
+  button.active {
+    background: #93B1C1;
+  }
+
   .btn {
     &:hover {
       background: #93B1C1;

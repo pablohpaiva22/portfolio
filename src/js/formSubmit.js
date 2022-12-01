@@ -5,8 +5,10 @@ const message = document.getElementById("message");
 const error = document.getElementById("formError");
 const serverError = document.getElementById("serverError");
 const success = document.getElementById('success')
-const button = document.querySelector('.form button')
+const button = document.getElementById('btn')
 const loading = document.getElementById('loadingIcon')
+
+console.log(button)
 
 function formSubmit() {
   async function handleSubmit(e) {
@@ -27,6 +29,7 @@ function formSubmit() {
       button.setAttribute('disabled', 'disabled')
       button.classList.remove('btn')
       button.innerText = 'Enviando...'
+      button.classList.add('active')
       loading.classList.add('active')
       const response = await fetch("https://portfolio-pablopaiva-server.vercel.app/sendemail", {
         method: "POST",
