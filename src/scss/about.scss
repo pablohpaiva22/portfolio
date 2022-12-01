@@ -1,17 +1,52 @@
 .about {
   margin: 6rem auto 8rem;
+  padding: 1rem;
   max-width: 550px;
+  border: 1px dashed black;
+  position: relative;
+  &::before {
+    content: "";
+    width: 1px;
+    height: 65px;
+    background: url('/src/assets/detail.png');
+    background-repeat:none ;
+    display: block;
+    position: absolute;
+    top: -65px;
+    left: 275px;
+  }
+  &::after {
+    content: "";
+    width: 1px;
+    height: 65px;
+    background: url('/src/assets/detail.png');
+    background-repeat:none ;
+    display: block;
+    position: absolute;
+    bottom: -65px;
+    left: 275px;
+  }
   h2 {
     margin-bottom: 1rem;
-    padding: 0 1rem;
-    font-family: "Rubik", sans-serif;
+    padding-left: 3.5rem;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 3rem;
     font-weight: normal;
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 10px;
+      background: #BCD0DC;
+      top: 54px;
+      left: 16px;
+    }
   }
   p {
     margin-bottom: 0.5rem;
-    padding: 0 1rem;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.5;
   }
   @include device(medium) {
     margin: 5rem auto 5rem;
