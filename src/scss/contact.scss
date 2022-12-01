@@ -13,7 +13,7 @@
     margin-bottom: 1.5rem;
     text-align: center;
     font-size: 3rem;
-    font-family: "Rubik", sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
   }
 }
 
@@ -78,13 +78,17 @@
     width: 130px;
     padding: 0.5rem 1rem;
     font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
     border: none;
+    background: #5D859B;
+    border-radius: 4px;
+    color: #fff;
     cursor: pointer;
   }
 
   .btn {
     &:hover {
-      background: #ddd;
+      background: #93B1C1;
     }
   }
 }
