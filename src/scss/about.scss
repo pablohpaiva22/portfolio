@@ -4,27 +4,34 @@
   max-width: 550px;
   border: 1px dashed black;
   position: relative;
+  @include device(medium) {
+    border: none;
+  }
   &::before {
     content: "";
     width: 1px;
     height: 65px;
     background: url('/src/assets/detail.png');
-    background-repeat:none ;
     display: block;
     position: absolute;
     top: -65px;
     left: 275px;
+    @include device(medium) {
+      background: none;
+    }
   }
   &::after {
     content: "";
     width: 1px;
     height: 65px;
     background: url('/src/assets/detail.png');
-    background-repeat:none ;
     display: block;
     position: absolute;
     bottom: -65px;
     left: 275px;
+    @include device(medium) {
+      background: none;
+    }
   }
   h2 {
     margin-bottom: 1rem;
@@ -32,6 +39,10 @@
     font-family: 'IBM Plex Mono', monospace;
     font-size: 3rem;
     font-weight: normal;
+    @include device(medium) {
+      font-size: 2.5rem;
+      padding-left: 2.5rem;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -41,6 +52,10 @@
       background: #BCD0DC;
       top: 54px;
       left: 16px;
+      @include device(medium) {
+        width: 30px;
+        top: 46px;
+      }
     }
   }
   p {
