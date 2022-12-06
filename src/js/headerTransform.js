@@ -1,7 +1,7 @@
 const header = document.querySelector('.header')
 
 function headerTransform() {
-  function handleClick() {
+  function handleScroll() {
     if (this.scrollY != 0) {
       header.classList.add('headerTransform')
     } else {
@@ -9,7 +9,7 @@ function headerTransform() {
     }
   }
 
-  window.addEventListener('scroll', handleClick)
+  window.addEventListener('scroll', handleScroll)
   
 }
 
